@@ -1,0 +1,12 @@
+﻿using SoalNo4.CustomMiddleware;
+
+namespace SoalNo4.Extensions
+{
+    public static class ExceptionMiddlewareExtensions
+    {
+        public static void ConfigureCustomExceptionMiddleware(this IApplicationBuilder app)
+        {
+            app.UseMiddleware<ExceptionMiddleware>();
+        }
+    }
+}
